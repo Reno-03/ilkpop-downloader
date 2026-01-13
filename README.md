@@ -1,9 +1,15 @@
-# Bulk Kpop Downloader
+<h1 align="center">🎶 Bulk Kpop Downloader 🎶 </h1>
 
-**Description:**  
-This Python script downloads all Kpop songs **based on ARTIST** from [ilkpop.com](https://www.ilkpop.com) . It fetches search results using `requests` and handles the download process with `Selenium`, automatically closing any pop-up windows that appear.
+<p align="center">
+<a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.x-blue?logo=python" alt="Python"></a>
+<a href="https://www.ilkpop.in/"><img src="https://img.shields.io/badge/ilKPOP-web-darkgreen" alt="ilKPOP"></a>
+<a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
+</p>
 
----
+<p align="center"> This Python script downloads all Kpop songs <b>based on ARTIST</b> from <a href="https://www.ilkpop.com" alt="ilKPOP">ilKPOP</a>. It fetches search results using `requests` and handles the download process with `Selenium`, automatically closing any pop-up windows that appear. </p>
+
+## Demo
+
 
 ## Features
 
@@ -11,8 +17,6 @@ This Python script downloads all Kpop songs **based on ARTIST** from [ilkpop.com
 - Download all songs in a specific automatically.
 - Automatically closes pop-up tabs.
 - Command-line interface for flexibility.
-
----
 
 ## Requirements
 
@@ -23,8 +27,6 @@ This Python script downloads all Kpop songs **based on ARTIST** from [ilkpop.com
   - `selenium`
   - `beautifulsoup4`
   - `webdriver-manager` (optional, recommended)
-
----
 
 ## Run the Script Locally
 
@@ -68,8 +70,6 @@ python main.py --page=2 --search="BTS"
 | `--page`     | Page number of search results    | 1            |
 | `--search`   | Search keyword (artist/song)     | "Stray Kids" |
 
----
-
 ## How it works
 
 1. Sends a GET request to `ilkpop.com` to fetch search results.
@@ -77,8 +77,6 @@ python main.py --page=2 --search="BTS"
 3. Opens each link with Selenium, clicks the download button.
 4. Detects and closes any popup tabs.
 5. Repeats for all links on the search results page.
-
----
 
 ## Notes
 
