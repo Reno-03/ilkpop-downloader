@@ -6,10 +6,16 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 import bs4
+import argparse
 
-# get a request for the main website to get download link for each song
-page_num = 1
-search_key = 'Stray Kids'
+# get a request for the main website to get download link for each song using parser
+parser = argparse.ArgumentParser(description="Download Kpop songs from ilkpop.com based on artist name")
+parser.add_argument("--page", type=int, default=1, help="Page number to search")
+parser.add_argument("--search", type=str, default="Stray Kids", help="Search keyword")
+args = parser.parse_args()
+
+page_num = args.page
+search_key = args.search
 type_radio = 'artist'
 
 # different url request for page 1 and other pages
