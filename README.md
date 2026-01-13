@@ -73,6 +73,13 @@ python main.py --page=2 --search="BTS"
 | `--page`     | Page number of search results    | 1            |
 | `--search`   | Search keyword (artist/song)     | "Stray Kids" |
 
+### Song File Directory  
+
+The downloaded songs are saved at:
+```bash
+/kpop_songs/<artist_name>/
+```
+
 ## How it works
 
 1. Sends a GET request to `ilkpop.com` to fetch search results.
