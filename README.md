@@ -6,7 +6,7 @@
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
 </p>
 
-<p align="center"> This Python script downloads all Kpop songs <b>based on ARTIST</b> from <a href="https://www.ilkpop.com" alt="ilKPOP">ilKPOP</a>. It fetches search results using `requests` and handles the download process with `Selenium`.</p>
+<p align="center"> This Python script downloads all Kpop songs <b>based on ARTIST</b> from <a href="https://www.ilkpop.com" alt="ilKPOP">ilKPOP</a>. It fetches search results using <i>requests</i> and handles the download process with <i>Selenium</i>.</p>
 
 ## Demo
 
