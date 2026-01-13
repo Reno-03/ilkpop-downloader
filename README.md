@@ -6,22 +6,25 @@
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
 </p>
 
-<p align="center"> This Python script downloads all Kpop songs <b>based on ARTIST</b> from <a href="https://www.ilkpop.com" alt="ilKPOP">ilKPOP</a>. It fetches search results using `requests` and handles the download process with `Selenium`, automatically closing any pop-up windows that appear. </p>
+<p align="center"> This Python script downloads all Kpop songs <b>based on ARTIST</b> from <a href="https://www.ilkpop.com" alt="ilKPOP">ilKPOP</a>. It fetches search results using `requests` and handles the download process with `Selenium`.</p>
 
 ## Demo
 
+<div align="center">
+  <img src="/screenshots/demo.gif" height="400"/>
+</div>
 
 ## Features
 
 - Search by artist.
 - Download all songs in a specific automatically.
-- Automatically closes pop-up tabs.
+- Uses Chromium-based browser like Brave to remove pop-ups and ads.
 - Command-line interface for flexibility.
 
 ## Requirements
 
 - Python 3.8+
-- Google Chrome
+- Brave Browser (for no popups)
 - Python packages:
   - `requests`
   - `selenium`
