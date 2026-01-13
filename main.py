@@ -1,19 +1,20 @@
 #! python3
 # kpopDownloader.py - downloads kpop songs based on the search link on ilkpop.com
 
-import re
 from urllib.parse import unquote
-import requests
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-import time
-import bs4
-import argparse
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC   
+from selenium.webdriver.support import expected_conditions as EC 
+
+import re
+import requests
+import time
+import bs4
+import argparse
 import os
 
 # get a request for the main website to get download link for each song using parser
@@ -27,8 +28,8 @@ page_num = args.page
 search_key = args.search
 type_radio = 'artist'
 
-# Function to sanitize filename/folder names
 def sanitize_name(name):
+    """Function to sanitize filename/folder names"""
     # Remove invalid characters for Windows filenames
     name = re.sub(r'[<>:"/\\|?*]', '', name)
     # Remove leading/trailing spaces and dots
