@@ -1,9 +1,9 @@
 <h1 align="center">🎶 Bulk Kpop Downloader 🎶 </h1>
 
 <p align="center">
-<a href="https://www.python.org/" target="_blank"><img src="https://img.shields.io/badge/Python-3.x-blue?logo=python" alt="Python"></a>
-<a href="https://www.selenium.dev/" target="_blank"><img src="https://img.shields.io/badge/Selenium-WebDriver-lightgreen" alt="Selenium"></a>
-<a href="https://www.ilkpop.in/" target="_blank"><img src="https://img.shields.io/badge/ilKPOP-Web-darkgreen" alt="ilKPOP"></a>
+<a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.x-blue?logo=python" alt="Python"></a>
+<a href="https://www.selenium.dev/"><img src="https://img.shields.io/badge/Selenium-WebDriver-lightgreen" alt="Selenium"></a>
+<a href="https://www.ilkpop.in/"><img src="https://img.shields.io/badge/ilKPOP-Web-darkgreen" alt="ilKPOP"></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
 </p>
 
@@ -18,7 +18,7 @@
 ## Features
 
 - Search by artist.
-- Download all songs in a specific automatically.
+- Download all songs in a specific page automatically.
 - Uses Chromium-based browser like Brave to remove pop-ups and ads.
 - Command-line interface for flexibility.
 
