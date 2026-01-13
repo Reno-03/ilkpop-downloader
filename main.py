@@ -2,6 +2,7 @@
 # kpopDownloader.py - downloads kpop songs based on the search link on ilkpop.com
 
 import re
+from urllib.parse import unquote
 import requests
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -33,6 +34,14 @@ def sanitize_name(name):
     # Remove leading/trailing spaces and dots
     name = name.strip('. ')
     return name
+
+def decode_filename(encoded_filename):
+    """Properly decode URL-encoded filename, handling double encoding"""
+    # First decode: %2520 -> %20
+    decoded = unquote(encoded_filename)
+    # Second decode: %20 -> space, Korean chars decoded properly
+    decoded = unquote(decoded)
+    return decoded
 
 # create download directory if not exists
 download_dir = 'kpop_songs'
@@ -100,9 +109,16 @@ for idx, link in enumerate(links, 1):
             mp3_response = requests.get(mp3_url, stream=True)
             mp3_response.raise_for_status()
             
-            # Extract filename from URL
-            if 'filename%3D' in mp3_url:
-                filename = mp3_url.split('filename%3D')[1].split('&')[0].replace('%2520', ' ')
+            # Extract and decode filename from URL
+            if 'filename%3D' in mp3_url or 'filename=' in mp3_url:
+                # Extract the filename part
+                if 'filename%3D' in mp3_url:
+                    filename = mp3_url.split('filename%3D')[1].split('&')[0]
+                else:
+                    filename = mp3_url.split('filename=')[1].split('&')[0]
+                
+                # Properly decode the filename (handles double encoding)
+                filename = decode_filename(filename)
             else:
                 filename = f"song_{idx}.mp3"
             
