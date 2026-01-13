@@ -2,7 +2,8 @@
 
 <p align="center">
 <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.x-blue?logo=python" alt="Python"></a>
-<a href="https://www.ilkpop.in/"><img src="https://img.shields.io/badge/ilKPOP-web-darkgreen" alt="ilKPOP"></a>
+<a href="https://www.selenium.dev/"><img src="https://img.shields.io/badge/Selenium-WebDriver-lightgreen" alt="Selenium"></a>
+<a href="https://www.ilkpop.in/"><img src="https://img.shields.io/badge/ilKPOP-Web-darkgreen" alt="ilKPOP"></a>
 <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a>
 </p>
 
