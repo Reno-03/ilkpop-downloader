@@ -77,13 +77,13 @@ python main.py --page=2 --search="BTS"
 
 1. Sends a GET request to `ilkpop.com` to fetch search results.
 2. Parses HTML with `BeautifulSoup` to extract download links.
-3. Opens each link with Selenium, clicks the download button.
-4. Detects and closes any popup tabs.
+3. Retrieves the MP3 URL then downloads it using Requests.
+4. The downloaded file is renamed properly, including Korean characters.
 5. Repeats for all links on the search results page.
 
 ## Notes
 
-- Make sure Chrome version and ChromeDriver version match.  
+- Make sure Brave version and Brave version match.  
 - Pop-ups are automatically closed to avoid interruptions.  
 - The script currently runs in a visible browser window (not headless).
 
